@@ -3,25 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account Verification- Travel Log</title>
+    <title>Welcome to Travel Log</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+        .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            text-align: center;
         }
         h1 {
+            color: #4a0e78;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .hero-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .feature {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .feature i {
+            font-size: 2em;
             color: #8a2be2;
+            margin-bottom: 10px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #8a2be2;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #4a0e78;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to Travel Log!</h1>
-    <p>Thank you for signing up. Our mobile app is currently in development.</p>
-    <p>Please check your mobile device to access the app.</p>
-    <!-- <p>If you have any questions, please contact us at: support@yourapp.com</p> -->
+    <div class="container">
+        <h1>Welcome to Travel Log!</h1>
+        <img src="https://source.unsplash.com/1600x900/?travel" alt="Travel scenery" class="hero-image">
+        
+        <div class="feature">
+            <i class="fas fa-map-marked-alt"></i>
+            <h2>Track Your Adventures</h2>
+            <p>Log your travels and create beautiful memories with our easy-to-use mobile app.</p>
+        </div>
+        
+        <div class="feature">
+            <i class="fas fa-camera-retro"></i>
+            <h2>Capture Moments</h2>
+            <p>Add photos and notes to your travel logs to relive your experiences.</p>
+        </div>
+        
+        <div class="feature">
+            <i class="fas fa-share-alt"></i>
+            <h2>Share with Friends</h2>
+            <p>Share your travel stories with friends and family or keep them private.</p>
+        </div>
+        
+        <p>Thank you for signing up! Our mobile app is currently in development.</p>
+        <p>Please check your mobile device to access the app once it's ready.</p>
+        
+        <a href="#" class="cta-button">Get Notified on Launch</a>
+    </div>
 </body>
 </html>
